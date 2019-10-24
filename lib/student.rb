@@ -11,7 +11,7 @@ class Student
 
   def self.all
     sql = <<-SQL
-            
+
           SQL
 
     DB[:conn].execute 
