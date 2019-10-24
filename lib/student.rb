@@ -11,10 +11,11 @@ class Student
 
   def self.all
     sql = <<-SQL
-
+            SELECT *
+            FROM students
           SQL
 
-    DB[:conn].execute 
+    DB[:conn].execute
   end
 
   def self.find_by_name(name)
